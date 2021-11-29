@@ -56,10 +56,10 @@ mkdir ./img/bookwalker_global
 | ---------- | ------------------------------------------------------------ |
 | user_agent | 用户代理，用于伪装为普通网页浏览器                           |
 | timeout    | 响应超时时间，单位为“秒”                                     |
-| retry      | 请求发生错误时的重试次数，若超过此值，当前任务将被置于任务队列底部 |
+| retry      | 请求发生错误时的重试次数，若超过此值，当前任务将被置于任务队列底部，稍后会再进行一轮重试 |
 | thread_num | 请求和数据处理使用的线程数目                                 |
 
 ## 注意事项
 
-1. 执行`wenku8_image.py`和`libi_image.py`前必须先分别执行`wenku8_chapter.py`和`libi_chapter`。
+1. 执行`wenku8_image.py`和`libi_image.py`前必须先分别执行`wenku8_chapter.py`和`libi_chapter.py`。
 2. 不建议修改`bookwalker_jp.py`和`bookwalker_global.py`的请求线程数，此二网站似乎有反爬虫机制，线程数超过5时有可能被临时封禁IP地址。
