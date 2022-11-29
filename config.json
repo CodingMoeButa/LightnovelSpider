@@ -1,0 +1,32 @@
+{
+    "scheduler": {
+        "threadNum": 10
+    },
+    "downloader": {
+        "proxy": "http://127.0.0.1:10809",
+        "timeout": 30,
+        "domains": [
+            {
+                "domain": "www.gztwkadokawa.com",
+                "proxy": "http://127.0.0.1:10819",
+                "cookies": "",
+                "timeout": 30
+            },
+            {
+                "domain": ".bookwalker.com.tw",
+                "proxy": "http://127.0.0.1:10829",
+                "cookies": "",
+                "timeout": 30
+            }
+        ]
+    },
+    "dataPool": {
+        "mysql": {
+            "host": "127.0.0.1",
+            "port": 3306,
+            "username": "root",
+            "password": "",
+            "database": "lightnovel_spider"
+        }
+    }
+}
